@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomskyAPI", "BloomskyAPI\BloomskyAPI.csproj", "{01D445E5-A660-4DB4-A4E3-E41E055B4AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomskyApiConsoleApp", "BloomskyApiConsoleApp\BloomskyApiConsoleApp.csproj", "{B3030789-479A-43E8-A439-D0AC7E5C256A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01D445E5-A660-4DB4-A4E3-E41E055B4AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D445E5-A660-4DB4-A4E3-E41E055B4AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D445E5-A660-4DB4-A4E3-E41E055B4AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D445E5-A660-4DB4-A4E3-E41E055B4AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3030789-479A-43E8-A439-D0AC7E5C256A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3030789-479A-43E8-A439-D0AC7E5C256A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3030789-479A-43E8-A439-D0AC7E5C256A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3030789-479A-43E8-A439-D0AC7E5C256A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40822A74-4B52-43D5-AE43-B30FEB0F84F1}
+	EndGlobalSection
+EndGlobal

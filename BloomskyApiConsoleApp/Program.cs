@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using Bloomsky.Api;
 using Microsoft.Extensions.Configuration;
+using Bloomsky.Api;
 
 namespace BloomskyApiConsoleApp {
 	class Program {
@@ -13,7 +13,7 @@ namespace BloomskyApiConsoleApp {
 
 			var configuration = builder.Build();
 
-			var x = new BloomskyApi(configuration["apiKey"]);
+			var x = new WebApiClient(configuration["apiKey"]);
 			var ret = x.GetData().Result;
 			Console.WriteLine($"Temp={ret.FirstOrDefault().Data.Temperature:F1}F");
 		}

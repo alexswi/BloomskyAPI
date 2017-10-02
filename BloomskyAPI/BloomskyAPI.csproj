@@ -1,21 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Bloomsky.Api</AssemblyName>
-    <RootNamespace>Bloomsky.Api</RootNamespace>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>Bloomsky.Api</AssemblyName>
+		<Title>Bloomsky API wrapper</Title>
+		<RootNamespace>Bloomsky.Api</RootNamespace>
 		<PackageId>BloomskyApi.alexswi</PackageId>
-		<PackageVersion>1.0.1</PackageVersion>
-		<ProjectUrl>https://github.com/alexswi/BloomskyAPI</ProjectUrl>
+		<PackageVersion>1.0.2</PackageVersion>
+		<PackageProjectUrl>https://github.com/alexswi/BloomskyAPI</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/alexswi/BloomskyAPI</RepositoryUrl>
 		<Authors>Alexandre Swioklo</Authors>
-		<Description>Bloomsky API wrapper</Description>
+		<Description>Bloomsky API wrapper for .net standard</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageTags>Bloomsky</PackageTags>
-		<PackageReleaseNotes>First release</PackageReleaseNotes>	  
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\BloomskyApi.xml</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-  </ItemGroup>
+		<PackageReleaseNotes>Better class name</PackageReleaseNotes>
+		<Copyright>Copyright 2017 Alexandre Swioklo</Copyright>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\netstandard2.0\BloomskyApi.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+	</ItemGroup>
 </Project>

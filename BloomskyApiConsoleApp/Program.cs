@@ -13,7 +13,7 @@ namespace BloomskyApiConsoleApp {
 
 			var configuration = builder.Build();
 
-			var x = new WebApiClient(configuration["apiKey"]);
+			var x = new BloomskyClient(configuration["apiKey"]);
 			var ret = x.GetData().Result;
 			Console.WriteLine($"Temp={ret.FirstOrDefault().Data.Temperature:F1}F");
 		}

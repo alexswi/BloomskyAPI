@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Bloomsky.Api {
-	public class WebApiClient{
+	public class BloomskyClient {
 		public string ApiKey { get; set; }
 
 		public string ApiUrl { get; set; }
 
-		public WebApiClient(string apiKey) {
+		public BloomskyClient(string apiKey) {
 			ApiKey = apiKey;
 			ApiUrl = "HTTP://api.bloomsky.com/api/skydata/";
 		}
-		public WebApiClient(string apiKey, string apiUrl)  {
+		public BloomskyClient(string apiKey, string apiUrl)  {
 			ApiKey = apiKey;
 			ApiUrl = apiUrl;
 		}

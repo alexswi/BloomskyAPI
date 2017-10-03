@@ -92,6 +92,8 @@ namespace Bloomsky.Api {
 		[JsonProperty("Temperature")]
 		public double Temperature { get; set; }
 
+		public double TemperatureC => 5.0 / 9.0 * (Temperature - 32);
+
 		[JsonProperty("TS")]
 		public long TS { get; set; }
 
@@ -107,14 +109,19 @@ namespace Bloomsky.Api {
 		[JsonProperty("SustainedWindSpeed")]
 		public double SustainedWindSpeed { get; set; }
 
+		public double SustainedWindSpeedKmh => SustainedWindSpeed * 1.60934;
+
 		[JsonProperty("RainDaily")]
-		public long RainDaily { get; set; }
+		public double RainDaily { get; set; }
+		public double RainDailyMm => RainDaily * 2.54;
 
 		[JsonProperty("24hRain")]
 		public double The24hRain { get; set; }
+		public double The24hRainMm => The24hRain * 2.54;
 
 		[JsonProperty("RainRate")]
-		public long RainRate { get; set; }
+		public double RainRate { get; set; }
+		public double RainRateMm => RainRate * 2.54;
 
 		[JsonProperty("WindDirection")]
 		public string WindDirection { get; set; }
@@ -124,6 +131,7 @@ namespace Bloomsky.Api {
 
 		[JsonProperty("WindGust")]
 		public double WindGust { get; set; }
+		public double WindGustKmh => WindGust * 1.60934;
 	}
 
 	public partial class Sky {

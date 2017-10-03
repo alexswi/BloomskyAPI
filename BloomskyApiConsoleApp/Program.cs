@@ -15,7 +15,7 @@ namespace BloomskyApiConsoleApp {
 
 			var x = new BloomskyClient(configuration["apiKey"]);
 			var ret = x.GetData().Result;
-			Console.WriteLine($"Temp={ret.FirstOrDefault().Data.Temperature:F1}F");
+			Console.WriteLine($"Temp={ret.FirstOrDefault().Data.TemperatureC:F1}C");
 		}
 	}
 }
